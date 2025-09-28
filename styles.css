@@ -1,26 +1,7 @@
-/* Button row for form buttons */
-.button-row {
-    display: flex;
-    gap: 10px;
-    margin-top: 8px;
-}
-
-/* Footer styling */
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    color: #888;
-    font-size: 1rem;
-}
-
-/* Akan info section margin fix */
-.akan-info {
-    margin-top: 20px;
-}
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
-    background: #f9f9f9;
-    color: #222;
+    background: #f7f3ec;
+    color: #222a36;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -33,16 +14,17 @@ body {
 #akanForm {
     max-width: 400px;
     width: 100%;
-    margin: 32px auto 0 auto;
-    background: #fff;
-    border-radius: 16px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-    padding: 36px 28px 28px 28px;
+    margin: 40px auto 0 auto;
+    background: #f5ecd7;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(50,67,91,0.08);
+    padding: 40px 32px 32px 32px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
     animation: fadeIn 0.7s;
 }
+
 
 h1 {
     text-align: center;
@@ -51,13 +33,13 @@ h1 {
     font-size: 2.1rem;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #0078d4;
+    color: #222a36;
 }
 
 p {
     text-align: center;
     margin-bottom: 18px;
-    color: #444;
+    color: #040506;
     font-size: 1.08rem;
 }
 
@@ -65,86 +47,144 @@ label {
     font-size: 1rem;
     margin-bottom: 6px;
     font-weight: 500;
-    color: #0078d4;
+    color: #0a0b0b;
 }
 
 input, select {
     padding: 10px 12px;
     font-size: 1rem;
-    border: 1px solid #cfd8dc;
+    border: 1px solid #c7d2e3;
     border-radius: 6px;
     outline: none;
-    background: #f6fafd;
+    background: #f7fafc;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
 
 input:focus, select:focus {
-    border-color: #0078d4;
-    box-shadow: 0 0 0 2px #e3f2fd;
+    border-color: #3a7ca5;
+    box-shadow: 0 0 0 2px #d2e6f7;
 }
 
+
 button {
-    background: linear-gradient(90deg, #0078d4 60%, #005fa3 100%);
+    background: #005fa3;
     color: #fff;
     border: none;
     cursor: pointer;
     font-weight: 600;
     font-size: 1.08rem;
-    border-radius: 6px;
-    padding: 10px 50;
-    box-shadow: 0 2px 8px rgba(0,120,212,0.07);
+    border-radius: 10px;
+    color: #a67c52;
+    box-shadow: 0 2px 8px rgba(0,95,163,0.07);
     transition: background 0.2s, transform 0.2s;
-    margin-top: 8px;
+    margin-top: 12px;
+    background: #e7cfa1;
+}
+button:focus {
+    box-shadow: 0 0 0 3px #b3e5fc;
 }
 
 button:hover {
-    background: linear-gradient(90deg, #005fa3 60%, #0078d4 100%);
+    background: #f7f8f8;
     transform: translateY(-2px) scale(1.03);
 }
 
-#result > div {
-    background: #e6f7ff;
+
+button[type="button"]#resetBtn {
+    background: #f6f8fa;
+    color: #005fa3;
+    margin-left: 12px;
+    border: 1px solid #e3e8ee;
+}
+button[type="button"]#resetBtn:hover {
+    background: #e3f2fd;
+}
+
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+#akanInfo {
+    background: #f7e7c1;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #bfa77a20;
+    color: #5a4632;
+    max-width: 350px;
+    font-size: 1rem;
+    animation: fadeIn 0.7s;
+    margin: 20px auto 0 auto;
+    padding: 18px 12px;
+}
+
+#akanInfo h3 {
+    margin-top: 0;
+    color: #0b0b0b;
+}
+
+#akanInfo h2 {
+    font-size: 1.3rem;
+    color: #100f0f;
+    margin-bottom: 8px;
+}
+
+#akanInfo p {
+    font-size: 1rem;
+    color: #040405;
+    margin-bottom: 0;
+}
+
+#result .result-card {
+    padding: 18px 12px;
+    background: #b3afaf;
     border-radius: 12px;
-    box-shadow: 0 2px 8px #0078d420;
+    box-shadow: 0 2px 8px #14141420;
     max-width: 350px;
     margin: auto;
-    padding: 18px 12px;
+    text-align: center;
+    animation: fadeIn 0.7s;
+}
+
+#result > div, #result .result-card {
+    background: #f7e7c1;
+    border-radius: 16px;
+    box-shadow: 0 2px 12px #bfa77a20;
+    border: 1px solid #e3e8ee;
+    max-width: 370px;
+    padding: 24px 18px;
     text-align: center;
     animation: fadeIn 0.7s;
 }
 
 #result h2 {
     font-size: 1.5rem;
-    color: #0078d4;
+    color: #a67c52;
     margin-bottom: 8px;
 }
 
 #result p {
     font-size: 1.1rem;
-    color: #005fa3;
+    color: #0f100f;
     margin-bottom: 0;
 }
 
-#akanInfo {
-    background: #fffbe6;
+.akan-name {
+    color: #005fa3;
+    font-weight: 700;
+    background: #e3f2fd;
+    padding: 4px 12px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px #ffd70030;
-    padding: 16px 14px;
-    max-width: 350px;
-    margin: 20px auto 0 auto;
-    font-size: 1rem;
-    color: #7a5c00;
-    animation: fadeIn 0.7s;
+    font-size: 1.2em;
 }
 
-button[type="button"]#resetBtn {
-    background: linear-gradient(90deg, #ffd700 60%, #ffb300 100%);
-    color: #222;
-    margin-left: 8px;
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 1rem;
 }
-button[type="button"]#resetBtn:hover {
-    background: linear-gradient(90deg, #ffb300 60%, #ffd700 100%);
-}
+
 
 @media (max-width: 600px) {
     body, main, #akanForm {

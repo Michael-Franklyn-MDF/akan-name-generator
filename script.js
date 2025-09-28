@@ -51,25 +51,26 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
 	const MM = month;
 	const DD = day;
 
-	// Use JS Date to get day of week
-	const dayOfWeek = date.getDay(); // 0=Sunday, 6=Saturday
+	
+	let d = ((4 * CC - 2 * CC - 1) + (45 * YY) + (1026 * (MM + 1)) + DD) % 7;
+	d = ((d % 7) + 7) % 7; // Ensure positive mod
 	let akanName = "";
-	let dayName = dayNames[dayOfWeek];
+	let dayName = dayNames[d];
 	if (gender === "male") {
-		akanName = akanNames.male[dayOfWeek];
+		akanName = akanNames.male[d];
 	} else if (gender === "female") {
-		akanName = akanNames.female[dayOfWeek];
+		akanName = akanNames.female[d];
 	} else {
 		resultDiv.textContent = "Invalid gender selected.";
 		return;
 	}
-	resultDiv.innerHTML = `<div style="padding:18px 12px;background:#e6f7ff;border-radius:10px;box-shadow:0 2px 8px #0078d420;max-width:350px;margin:auto;">
-		<h2>Your Akan Name: <span style='color:#0078d4'>${akanName}</span></h2>
+	resultDiv.innerHTML = `<div class="result-card">
+		<h2>Your Akan Name: <span class='akan-name'>${akanName}</span></h2>
 		<p>You were born on a <strong>${dayName}</strong>.</p>
 	</div>`;
 	akanInfo.style.display = "block";
 });
-// Reset button functionality
+
 document.getElementById('resetBtn').addEventListener('click', function() {
 	document.getElementById('akanForm').reset();
 	document.getElementById('result').textContent = "";
