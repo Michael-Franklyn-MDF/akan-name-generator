@@ -1,0 +1,165 @@
+/* Button row for form buttons */
+.button-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #888;
+    font-size: 1rem;
+}
+
+/* Akan info section margin fix */
+.akan-info {
+    margin-top: 20px;
+}
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#akanForm {
+    max-width: 400px;
+    width: 100%;
+    margin: 32px auto 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 36px 28px 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    animation: fadeIn 0.7s;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 12px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #0078d4;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 18px;
+    color: #444;
+    font-size: 1.08rem;
+}
+
+label {
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #0078d4;
+}
+
+input, select {
+    padding: 10px 12px;
+    font-size: 1rem;
+    border: 1px solid #cfd8dc;
+    border-radius: 6px;
+    outline: none;
+    background: #f6fafd;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus, select:focus {
+    border-color: #0078d4;
+    box-shadow: 0 0 0 2px #e3f2fd;
+}
+
+button {
+    background: linear-gradient(90deg, #0078d4 60%, #005fa3 100%);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.08rem;
+    border-radius: 6px;
+    padding: 10px 50;
+    box-shadow: 0 2px 8px rgba(0,120,212,0.07);
+    transition: background 0.2s, transform 0.2s;
+    margin-top: 8px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #005fa3 60%, #0078d4 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#result > div {
+    background: #e6f7ff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #0078d420;
+    max-width: 350px;
+    margin: auto;
+    padding: 18px 12px;
+    text-align: center;
+    animation: fadeIn 0.7s;
+}
+
+#result h2 {
+    font-size: 1.5rem;
+    color: #0078d4;
+    margin-bottom: 8px;
+}
+
+#result p {
+    font-size: 1.1rem;
+    color: #005fa3;
+    margin-bottom: 0;
+}
+
+#akanInfo {
+    background: #fffbe6;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ffd70030;
+    padding: 16px 14px;
+    max-width: 350px;
+    margin: 20px auto 0 auto;
+    font-size: 1rem;
+    color: #7a5c00;
+    animation: fadeIn 0.7s;
+}
+
+button[type="button"]#resetBtn {
+    background: linear-gradient(90deg, #ffd700 60%, #ffb300 100%);
+    color: #222;
+    margin-left: 8px;
+}
+button[type="button"]#resetBtn:hover {
+    background: linear-gradient(90deg, #ffb300 60%, #ffd700 100%);
+}
+
+@media (max-width: 600px) {
+    body, main, #akanForm {
+        padding: 0 8px;
+    }
+    #akanForm {
+        padding: 24px 8px 18px 8px;
+    }
+    #result > div, #akanInfo {
+        max-width: 98vw;
+        font-size: 1rem;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

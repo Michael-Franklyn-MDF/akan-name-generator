@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+        <h1>Akan Name Generator</h1>
+        <p>Discover your traditional Akan name based on your birthdate and gender. Akan names are given according to the day of the week a person is born.</p>
+        <form id="akanForm" aria-label="Akan Name Generator Form">
+            <label for="dob">Enter your Birthdate:</label>
+            <input type="date" id="dob" name="dob" required aria-label="Birthdate">
+            <label for="gender">Select Gender:</label>
+            <select id="gender" name="gender" aria-label="Gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <div class="button-row">
+                <button type="submit">Generate Akan Name</button>
+                <button type="button" id="resetBtn">Reset</button>
+            </div>
+        </form>
+        <section id="result" aria-live="polite">
+            <!-- Akan name will be displayed here -->
+        </section>
+    <section id="akanInfo" class="akan-info" style="display:none;">
+            <strong>About Akan Names:</strong>
+            <p>Akan names are given based on the day of the week a person is born. Each day has a unique name for males and females.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        &copy; 2025 Akan Name Generator
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>p
