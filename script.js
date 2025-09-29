@@ -24,7 +24,7 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
 	if (!gender) {
 		resultDiv.textContent = "Please select your gender.";
 		return;
-	}
+	} 
 
 	const date = new Date(dobInput);
 	const day = date.getDate();
