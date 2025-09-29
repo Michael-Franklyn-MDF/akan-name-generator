@@ -34,10 +34,10 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
 	// Validation
 	if (isNaN(day) || day < 1 || day > 31) {
 		resultDiv.textContent = "Day must be between 1 and 31.";
-		return;
-	}
-	if (isNaN(month) || month < 1 || month > 12) {
-		resultDiv.textContent = "Month must be between 1 and 12.";
+		const [yearStr, monthStr, dayStr] = dobInput.split('-');
+		const year = parseInt(yearStr, 10);
+		const month = parseInt(monthStr, 10);
+		const day = parseInt(dayStr, 10);
 		return;
 	}
 	if (!/^\d{4}$/.test(year.toString())) {
