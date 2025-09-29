@@ -43,7 +43,7 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
 	if (!/^\d{4}$/.test(year.toString())) {
 		resultDiv.textContent = "Year must be exactly 4 digits.";
 		return;
-	}
+	} 
 
 	// Calculate day of week using provided formula
 	const CC = Math.floor(year / 100);
