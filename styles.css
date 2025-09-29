@@ -160,7 +160,7 @@ button[type="button"]#resetBtn:hover {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
-}
+} 
 
 #result h2 {
     font-size: 1.5rem;
