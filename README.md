@@ -27,7 +27,7 @@ Akan Name Generator is a web application that helps users discover their traditi
 - GitHub: [Michael-Franklyn-MDF](https://github.com/Michael-Franklyn-MDF)
 
 ## License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the MIT License.
 
 ## Copyright
 © 2025 Michael Franklyn. All rights reserved.
