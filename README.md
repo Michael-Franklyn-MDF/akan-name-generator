@@ -9,7 +9,7 @@ Akan Name Generator is a web application that helps users discover their traditi
 ## Setup Instructions
 1. Creating the HTML Form, for users to input their birthdate and gender
 2. Making a custom made CSS file, to give the HTML Form factor an appiling look
-3. Implementation of JavaScript, to grant the HTML Form factor the ablity to calculate and intaract.
+3. Implementation of JavaScript, to grant the HTML Form factor the ablity to calculate and interact.
 
 ## BDD (Behavior-Driven Development)
 - **Given** a user visits the Akan Name Generator page
