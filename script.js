@@ -11,7 +11,7 @@ document.getElementById('akanForm').addEventListener('submit', function(e) {
 	const dobInput = document.getElementById('dob').value;
 	const gender = document.getElementById('gender').value;
 	const resultDiv = document.getElementById('result');
-	const akanInfo = document.getElementById('akanInfo');
+	const akanInfo = document.getElementById('akanInfo'); 
 
 	// Clear previous result
 	resultDiv.textContent = "";
